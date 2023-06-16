@@ -6,18 +6,18 @@ height = float(input("Please enter your height (m): "))
 BMI = weight / (height * height)
 print(f"Your BMI is: {round(BMI, 1)}")
 
-# Check and print "You are obese" if the user's BMI is 30 or greater.
+# Check and print "You're in obese range" if the user's BMI is 30 or greater.
 if BMI >= 30:
     print("You're in obese range.")
 
-# Check and print "You are overweight" if the user's BMI is 25 or greater.
+# Check and print "You're in the overweight range" if the user's BMI is 25 or greater.
 elif BMI >= 25:
     print("You're in the overweight range.")
 
-# Check and print "You are normal" if the user's BMI is 18.5 or greater.
+# Check and print "You're in the healthy weight range" if the user's BMI is 18.5 or greater.
 elif BMI >= 18.5:
     print("You're in the healthy weight range.")
 
-# If all the above conditions are false, meaning the user is less than 18.5, print "Print you are underweight".
+# If all the above conditions are false, meaning the user is less than 18.5, print "You are in the underweight range".
 else:
     print("You are in the underweight range.")
